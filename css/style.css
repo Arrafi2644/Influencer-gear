@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-font-size: 1.75rem;
+    --secondary-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --primary-color: rgba(58, 58, 58, 1);
+    --secondary-color: rgba(24, 25, 31, 1);
+    --third-color: rgba(120, 120, 133, 1);
+}
+
+.section-title {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    line-height: 3.7rem;
+    font-weight: 700;
+
+}
+
+.section-description {
+    font-size: var(--secondary-font-size);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: rgba(224, 44, 109, 1);
+    padding: 0.75rem 1.5rem;
+    padding-right: 3.5rem;
+    font-size: var(--secondary-font-size);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-primary::after {
+    position: absolute;
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* header start here  */
+
+/* navigation start here  */
+
+header {
+    max-width: 1125px;
+    padding: 3rem 1.25rem 0 1.25rem;
+    margin: auto;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header .navigation i,
+header nav ul li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--secondary-font-size);
+}
+
+.menubar,
+.mobile-cart{
+display: none;
+}
+
+
+/* Banner start here  */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.banner .banner-content {
+    width: 52%;
+}
+
+.banner-content .banner-title {
+    font-size: 3.25rem;
+    color: var(--primary-color);
+    line-height: 4.25rem;
+}
+
+.banner-content .banner-description {
+    margin: 1rem 0;
+}
+
+.banner .banner-content .btn-primary {
+    border-radius: 3.5rem;
+}
+
+.banner .banner-img {
+    position: relative;
+}
+
+.banner .banner-img .back-img {
+    width: 35%;
+}
+
+.banner .banner-img .back-img {
+    width: 100%;
+}
+
+.banner-img .main-camera {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* main part start here  */
+
+main>section {
+    max-width: 1125px;
+    padding: 0 1.25rem 0 1.25rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+/* sponsor section  */
+
+.sponsor-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    border: 1px solid rgba(241, 228, 255, 1);
+    padding: 2.25rem 3rem;
+    border-left: none;
+    border-right: none;
+}
+
+/* Popular collection section  */
+
+.popular-collection-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.popular-collection-section .popular-collection-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.popular-collection-section .product {
+    padding: 1rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.popular-collection-products .product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.popular-collection-products .product .product-name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 2.5rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.product-rating {
+    margin: 0.5rem 0;
+}
+
+.product-rating i {
+    color: rgba(251, 130, 0, 1);
+}
+
+.product-rating span {
+    color: rgba(120, 120, 133, 1);
+    font-weight: 700;
+}
+
+.popular-collection-products .product .product-description {
+    font-size: var(--small-font-size);
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    color: rgba(120, 120, 133, 1);
+}
+
+.popular-collection-section .btn-primary {
+    color: rgba(224, 44, 109, 1);
+    background: none;
+    display: block;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+.popular-collection-section .btn-primary::after {
+    color: rgba(224, 44, 109, 1);
+}
+
+
+/* feature products section  */
+
+.featured-products-section {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    justify-content: space-between;
+}
+
+.feature-products-img img{
+    width: 100%;
+}
+
+
+.featured-products-section .section-description {
+    margin: 1rem 0;
+}
+
+/* Footer section start here  */
+
+footer {
+    background-color: rgba(10, 8, 38, 1);
+
+}
+
+.footer-inner {
+    max-width: 1125px;
+    padding: 3rem 1.25rem;
+    margin: auto;
+    text-align: center;
+}
+
+footer .footer-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+}
+
+footer .footer-description {
+    font-size: var(--small-font-size);
+    color: rgba(217, 219, 225, 1);
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links .social-link {
+    background-color: rgb(34 33 59);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Responsive Design For Mobile */
+
+@media screen and (max-width:576px) {
+
+    .section-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .menubar, .mobile-cart {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header .logo a {
+        font-size: 1rem;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner .banner-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-content .banner-title {
+        font-size: 1.75rem;
+        line-height: normal;
+    }
+    .banner .banner-img {
+        width: 80%;
+    }
+
+    .sponsor-container {
+        gap: 1.5rem;
+    }
+
+    .popular-collection-section .popular-collection-products {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-products-section {
+        flex-direction: column-reverse;
+        gap: 1.8rem;
+        text-align: center;
+    }
+
+
+   .feature-products-img img{
+        width: 100%;
+    }
+
+    footer .footer-title {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    footer .footer-description {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    footer .social-links .social-link {
+        height: 25px;
+        width: 25px;
+        font-size: 0.75rem;
+
+    }
+
+
+
+}
+
+
+
+
+
